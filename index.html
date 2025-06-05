@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Futeboleiro</title>
+
+    <link rel="shortcut icon" href="./src/images/favicon-16x16.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="quiz-container">
+        <div class="quiz-background"></div>
+        <header class="quiz-header">
+          <div class="quiz-title">
+            <a href="./index.html"
+              ><i class="fa-solid fa-futbol quiz-icon"></i
+            ></a>
+            <a href="./index.html"><h2>Quiz Futeboleiro</h2></a>
+          </div>
+          <nav>
+            <ul class="quiz-nav-list">
+                <li><a href="./index.html">Quiz</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./author.html">Autor</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section class="quiz-intro" id="quiz-intro">
+            <h1>Bem-vindo ao Quiz Futeboleiro!</h1>
+            <p>
+              Teste seus conhecimentos sobre futebol com este quiz interativo.
+              Responda às perguntas e descubra se você é um verdadeiro
+              conhecedor do esporte!
+            </p>
+            <button id="btn-start">Iniciar Quiz</button>
+          </section>
+          <div class="questions-container">
+            <section class="quiz-question">
+              <h2>Em que país o futebol moderno foi inventado?</h2>
+              <div class="quiz-options">
+                <label for="quest1_a">
+                  <input type="radio" name="quest1" id="quest1_a" value="a" />
+                  Brasil
+                </label>
+                <label for="quest1_b">
+                  <input type="radio" name="quest1" id="quest1_b" value="b" />
+                  Inglaterra
+                </label>
+                <label for="quest1_c">
+                  <input type="radio" name="quest1" id="quest1_c" value="c" />
+                  Alemanha
+                </label>
+                <label for="quest1_d">
+                  <input type="radio" name="quest1" id="quest1_d" value="d" />
+                  Argentina
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>
+                Qual seleção venceu a primeira Copa do Mundo da FIFA em 1930?
+              </h2>
+              <div class="quiz-options">
+                <label for="quest2_a">
+                  <input type="radio" name="quest2" id="quest2_a" value="a" />
+                  Brasil
+                </label>
+                <label for="quest2_b">
+                  <input type="radio" name="quest2" id="quest2_b" value="b" />
+                  Itália
+                </label>
+                <label for="quest2_c">
+                  <input type="radio" name="quest2" id="quest2_c" value="c" />
+                  Uruguai
+                </label>
+                <label for="quest2_d">
+                  <input type="radio" name="quest2" id="quest2_d" value="d" />
+                  Alemanha
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>Quem é conhecido como o "Rei do Futebol"?</h2>
+              <div class="quiz-options">
+                <label for="quest3_a">
+                  <input type="radio" name="quest3" id="quest3_a" value="a" />
+                  Diego Maradona
+                </label>
+                <label for="quest3_b">
+                  <input type="radio" name="quest3" id="quest3_b" value="b" />
+                  Lionel Messi
+                </label>
+                <label for="quest3_c">
+                  <input type="radio" name="quest3" id="quest3_c" value="c" />
+                  Cristiano Ronaldo
+                </label>
+                <label for="quest3_d">
+                  <input type="radio" name="quest3" id="quest3_d" value="d" />
+                  Pelé
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>
+                Quantas vezes a seleção brasileira masculina de futebol venceu a
+                Copa do Mundo?
+              </h2>
+              <div class="quiz-options">
+                <label for="quest4_a">
+                  <input type="radio" name="quest4" id="quest4_a" value="a" /> 3
+                </label>
+                <label for="quest4_b">
+                  <input type="radio" name="quest4" id="quest4_b" value="b" /> 4
+                </label>
+                <label for="quest4_c">
+                  <input type="radio" name="quest4" id="quest4_c" value="c" /> 5
+                </label>
+                <label for="quest4_d">
+                  <input type="radio" name="quest4" id="quest4_d" value="d" /> 6
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>
+                Em que ano a Copa do Mundo foi sediada no Brasil pela última vez
+                antes de 2014?
+              </h2>
+              <div class="quiz-options">
+                <label for="quest5_a">
+                  <input type="radio" name="quest5" id="quest5_a" value="a" />
+                  1950
+                </label>
+                <label for="quest5_b">
+                  <input type="radio" name="quest5" id="quest5_b" value="b" />
+                  1962
+                </label>
+                <label for="quest5_c">
+                  <input type="radio" name="quest5" id="quest5_c" value="c" />
+                  1970
+                </label>
+                <label for="quest5_d">
+                  <input type="radio" name="quest5" id="quest5_d" value="d" />
+                  1994
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>
+                Qual país sediará a Copa do Mundo da FIFA de 2026 (juntamente
+                com outros dois)?
+              </h2>
+              <div class="quiz-options">
+                <label for="quest6_a">
+                  <input type="radio" name="quest6" id="quest6_a" value="a" />
+                  Espanha
+                </label>
+                <label for="quest6_b">
+                  <input type="radio" name="quest6" id="quest6_b" value="b" />
+                  Estados Unidos
+                </label>
+                <label for="quest6_c">
+                  <input type="radio" name="quest6" id="quest6_c" value="c" />
+                  Argentina
+                </label>
+                <label for="quest6_d">
+                  <input type="radio" name="quest6" id="quest6_d" value="d" />
+                  França
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>Qual clube brasileiro é conhecido como "Mengão"?</h2>
+              <div class="quiz-options">
+                <label for="quest7_a">
+                  <input type="radio" name="quest7" id="quest7_a" value="a" />
+                  Corinthias
+                </label>
+                <label for="quest7_b">
+                  <input type="radio" name="quest7" id="quest7_b" value="b" />
+                  Palmeiras
+                </label>
+                <label for="quest7_c">
+                  <input type="radio" name="quest7" id="quest7_c" value="c" />
+                  Flamengo
+                </label>
+                <label for="quest7_d">
+                  <input type="radio" name="quest7" id="quest7_d" value="d" />
+                  Santos
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>
+                Qual destes times joga na Premier League (Campeonato Inglês)?
+              </h2>
+              <div class="quiz-options">
+                <label for="quest8_a">
+                  <input type="radio" name="quest8" id="quest8_a" value="a" />
+                  Real Madrid
+                </label>
+                <label for="quest8_b">
+                  <input type="radio" name="quest8" id="quest8_b" value="b" />
+                  Bayer de Munique
+                </label>
+                <label for="quest8_c">
+                  <input type="radio" name="quest8" id="quest8_c" value="c" />
+                  Manchester United
+                </label>
+                <label for="quest8_d">
+                  <input type="radio" name="quest8" id="quest8_d" value="d" />
+                  Juventus
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>
+                Qual jogador é o maior artilheiro da história da UEFA Champions
+                League?
+              </h2>
+              <div class="quiz-options">
+                <label for="quest9_a">
+                  <input type="radio" name="quest9" id="quest9_a" value="a" />
+                  Lionel Messi
+                </label>
+                <label for="quest9_b">
+                  <input type="radio" name="quest9" id="quest9_b" value="b" />
+                  Robert Lewandowski
+                </label>
+                <label for="quest9_c">
+                  <input type="radio" name="quest9" id="quest9_c" value="c" />
+                  Karim Benzema
+                </label>
+                <label for="quest9_d">
+                  <input type="radio" name="quest9" id="quest9_d" value="d" />
+                  Cristiano Ronaldo
+                </label>
+              </div>
+            </section>
+            <section class="quiz-question">
+              <h2>Qual jogador argentino é famoso pela "Mão de Deus"?</h2>
+              <div class="quiz-options">
+                <label for="quest10_a">
+                  <input type="radio" name="quest10" id="quest10_a" value="a" />
+                  Lionel Messi
+                </label>
+                <label for="quest10_b">
+                  <input type="radio" name="quest10" id="quest10_b" value="b" />
+                  Diego Maradona
+                </label>
+                <label for="quest10_c">
+                  <input type="radio" name="quest10" id="quest10_c" value="c" />
+                  Gabriel Batistuta
+                </label>
+                <label for="quest10_d">
+                  <input type="radio" name="quest10" id="quest10_d" value="d" />
+                  Mario Kempes
+                </label>
+              </div>
+            </section>
+            <button class="btn-next" id="btn-next">Próxima</button>
+            <button class="btn-finish" id="btn-finish">Resultado</button>
+            <button class="btn-reset" id="btn-reset">Reiniciar Quiz</button>
+            <section class="result" id="result"></section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
