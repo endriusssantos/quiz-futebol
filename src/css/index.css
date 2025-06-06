@@ -73,9 +73,28 @@ body {
 
 .main-container .quiz-container main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.main-container .quiz-container .quiz-progress {
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-container .quiz-container .quiz-progress .quiz-progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
 }
 
 .main-container .quiz-container .quiz-intro {

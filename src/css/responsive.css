@@ -16,14 +16,9 @@
 
   .main-container .quiz-container .quiz-header {
     flex-direction: column;
-  }
-
-  .main-container .quiz-container .quiz-intro {
-    margin-top: 20px;
-  }
-
-  .main-container .quiz-container .questions-container {
-    margin-top: 10px;
+    gap: 10px;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .main-container .quiz-container .questions-container .quiz-question.show {

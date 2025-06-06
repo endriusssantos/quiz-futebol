@@ -7,6 +7,7 @@ const btnNext = document.getElementById("btn-next");
 const btnFinish = document.getElementById("btn-finish");
 const btnReset = document.getElementById("btn-reset");
 const result = document.getElementById("result");
+const progressBar = document.getElementById("quiz-progress-bar");
 
 let currentQuestionIndex = 0;
 
@@ -14,6 +15,7 @@ btnStart.addEventListener("click", () => {
   intro.style.display = "none";
   questionsContainer.style.display = "flex";
   showQuestion(currentQuestionIndex);
+  updateProgressBar();
 });
 
 btnNext.addEventListener("click", () => {
@@ -21,6 +23,7 @@ btnNext.addEventListener("click", () => {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     showQuestion(currentQuestionIndex);
+    updateProgressBar();
   }
 });
 
@@ -44,6 +47,11 @@ function showQuestion(index) {
 
 function hideQuestion(index) {
   questions[index].classList.remove("show");
+}
+
+function updateProgressBar() {
+  const progressPercent = ((currentQuestionIndex + 1) / questions.length) * 100;
+  progressBar.style.width = `${progressPercent}%`;
 }
 
 radios.forEach((radio) => {
@@ -140,6 +148,7 @@ function resetQuiz() {
   questions.forEach((q) => q.classList.remove("show"));
 
   currentQuestionIndex = 0;
+  progressBar.style.width = "0%";
 
   radios.forEach((radio) => {
     radio.checked = false;
