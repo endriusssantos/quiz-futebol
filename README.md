@@ -21,7 +21,7 @@ Um quiz interativo feito com HTML, CSS e JavaScript puro, com foco em perguntas 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repo.git
+   git clone https://github.com/endriusssantos/quiz-futebol
 
    ```
 
